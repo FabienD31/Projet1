@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
         <title>WILD ENCHERE PROMO #9</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -14,30 +15,30 @@
             <!-- NAV -->
         </header>
         <main>
-          <h3 id ="contactezNous">Contactez-nous</h3>
+          <h3 class="contactezNous text-center ">Contactez-nous</h3>
             <div class="container">
             <form>
-                <div class="form-row">
-                  <div class="col">
+              <div class="form-group">
+                  <div class="col py-2">
                     <input type="text" class="form-control" placeholder="Prénom">
                   </div>
-                  <div class="col">
+                  <div class="col py-2">
                     <input type="text" class="form-control" placeholder="Nom">
                   </div>
-                </div>
-                <div class = "form">
-                  <div class="col">
+              </div> 
+                <div class = "form-group">
+                  <div class="col-auto py-2">
                     <input type="email" class="form-control" placeholder="E-mail">
                   </div>
-                  <div class="col">
-                    <input type="textarea" class="form-control" placeholder="Votre texte">
-                  </div>
-                  <div class="col">
-                    <button type = button class="button">Envoyer</button>
+                  <div class="col-auto py-3">
+                    <textarea class="form-control" id="text" placeholder="Ton texte"></textarea>
                   </div>
                 </div>
+                <div class= "text-center">
+                <button type="button" class="btn btn-primary">Envoyer</button>
+                </div>
+            </form>
             </div>
-              </form>
         </main>
         <footer>
             <!-- FOOTER -->
