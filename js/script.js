@@ -63,7 +63,7 @@ const cards = {
         "name" : "Harold",
         "img" : "./pictures/Harold.jpg",
         "alt" : "Pete Doherty",
-        "liId" : "georges",
+        "liId" : "pete",
         "aId" : "harold",
         "description" : `"Passionné de nouvelles technologies, de musique et de basket, j'aime profiter de chaque instant sur cette terre, avec mes amis, ma famille"`,
         "adjectifs" : "<b>Rocambolesque</b>, Délectable, <b>Hardi</b>, Vivable, <b>Cataclysmique</b>",
