@@ -6,6 +6,7 @@ img {
 .basket {
     background-color: #aab9cf;
     flex-grow: 1;
+    overflow: auto;
 }
 .card {
     box-shadow: 3px 3px 3px grey;
@@ -13,19 +14,32 @@ img {
 form {
     display: flex;
     flex-direction: column;
+    margin: 1em;
 }
 main {
-    justify-content: space-between;
+    height: 100vh;
 }
 aside {
     background-color: #8f8389;
+}
+@media screen and (max-width: 992px) {
+
+    .col-md-3 {
+        margin: 0 20%;
+    }
+
 }
 @media screen and (max-width: 767px) {
 
     .col-md-3 {
         margin: 0 10%;
     }
-
+    main {
+        flex-direction: column;
+    }
+    main {
+        height: initial;
+    }
 }
 @media screen and (max-width: 576px) {
 
@@ -41,5 +55,4 @@ aside {
     }
     
 }
-
 /* END CSS RULES FOR CARDS.HTML */
