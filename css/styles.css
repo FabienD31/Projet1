@@ -1,5 +1,33 @@
-/* START CSS FOR CARD.HTML */
-.card-title {
-    font-size: 2rem;
+/*START CSS RULES FOR CARDS.HTML */
+img {
+    max-height: 250px;
+    object-fit: contain;
 }
-/* END CSS FOR CARDS.HTML */
+.basket {
+    background-color: #aab9cf;
+}
+.card {
+    box-shadow: 3px 3px 3px grey;
+}
+@media screen and (max-width: 767px) {
+
+    .col-md-3 {
+        margin: 0 10%;
+    }
+
+}
+@media screen and (max-width: 576px) {
+
+    .col-md-3 {
+        margin: 0 5%;
+    }
+    
+}
+@media screen and (max-width: 360px) {
+
+    .col-md-3 {
+        margin: 0 2%;
+    }
+    
+}
+/* END CSS RULES FOR CARDS.HTML */
