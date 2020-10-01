@@ -5,6 +5,7 @@ img {
 }
 .basket {
     background-color: #aab9cf;
+    flex-grow: 1;
 }
 .card {
     box-shadow: 3px 3px 3px grey;
@@ -12,6 +13,12 @@ img {
 form {
     display: flex;
     flex-direction: column;
+}
+main {
+    justify-content: space-between;
+}
+aside {
+    background-color: #8f8389;
 }
 @media screen and (max-width: 767px) {
 
