@@ -245,6 +245,17 @@ const cards = {
         "adjectifs" : "<b>Rocambolesque</b>, Délectable, <b>Hardi</b>, Cataclysmique, <b>Vivable</b>",
         "langage" : "JS",
         "projet" : "Hacker le Pentagone"
+    },
+    "22": {
+        "name" : "Sebastien",
+        "img" : "./pictures/Seb.jpg",
+        "alt" : "Will Smith",
+        "liId" : "will",
+        "aId" : "seb",
+        "description" : `"Je suis une grande personne qui fixe sa barre très haut !"`,
+        "adjectifs" : "<b>Délectable</b>, Vivable, <b>Hardi</b>, Cataclysmique, <b>Libidineux</b>",
+        "langage" : "C#",
+        "projet" : "Faire concurrence à Microsoft"
     }
 }
 
