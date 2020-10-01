@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WILD ENCHERE PROMO #9</title>
+        <title>WILD ENCHERE PROMO #9 - Panier</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/styles.css">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -14,28 +14,34 @@
 
         <!-- NAV -->
 
-        <div class="container">
+        <main>
 
-            <h1 class="text-center">PANIER DES WILDERS</h1>
+            <section class="basket">
+                <h1 class="text-center py-5">PANIER DES WILDERS</h1>
+                <div class="container"></div>
+            </section>
 
-            <div class="card text-center" style="width: 18rem;">
-                <img src="./pictures/3201727.jpg" class="card-img-top" alt="will smith">
-                <div class="card-body">
-                  <h5 class="card-title">Sébastien</h5>
-                  <p class="card-text font-italic">"Je suis une grande personne"</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><b>Déléctable</b>, Passable, <b>Vivable</b>, Libidineux-se, <b>Cataclysmique</b></li>
-                  <li class="list-group-item">C#</li>
-                  <li class="list-group-item font-weight-bold">Faire concurrence à Microsoft</li>
-                  <li id="willsmith" class="list-group-item text-danger font-weight-bold">10000€</li>
-                </ul>
-                <div class="card-body text-center">
-                  <a href="#" id="seb" class="btn btn-primary">+ 100€</a>
-                </div>
-            </div>
+            <aside>
+                <form action="#" method="post">
 
-        </div>
+                    <label for="name">Name :</label>
+                    <input type="text" name="name" id="name" required>
+
+                    <label for="surname">Surname :</label>
+                    <input type="text" name="surname" id="surname" required>
+
+                    <label for="surname">Age :</label>
+                    <input type="text" name="age" id="age" required>
+
+                    <label for="">
+                        Traits de caractères :
+                        <input type="checkbox" name="" id="">
+                    </label>
+
+                </form>
+            </aside>
+
+        </main>
 
         <!-- FOOTER -->
 
