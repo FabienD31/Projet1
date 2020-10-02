@@ -21,6 +21,7 @@ main {
 }
 aside {
     background-color: #8f8389;
+    height: 100vh;
 }
 ::placeholder {
     font-style: italic;
