@@ -381,8 +381,5 @@ for (; i<l; i++)
 		if (document.querySelectorAll(":checked").length > 5)
 			this.checked = false;
 	}, false);
+//END FONCTIONS FOR CARDS.HTML
 	
-
-/*
-END FONCTIONS FOR CARDS.HTML
-*/

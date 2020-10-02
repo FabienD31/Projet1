@@ -7,7 +7,7 @@
     <title>WILD ENCHERE PROMO #9</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="news.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -48,25 +48,24 @@
         </nav>
     </header>
     <main>
-            <h3 class="text-sm-center">The Wild Code News</h3>
-    <main class="pt-5">
-        <div class="container pt-5">
+        <div class="container pt-3">
+            <h3 class="text-sm-center p-4">The Wild Code News</h3>
             <div class="card mb-3">
                 <img class="card-img-top"
                     src="https://media-cdn.tripadvisor.com/media/photo-s/10/9d/4c/f1/les-moutons-au-sommet.jpg"
                     alt="Image test 1">
                 <div class="card-body">
                     <h5 class="card-title">C# the new trend, what will become all the JS developers???</h5>
-                    <p class="card-text">As predicted by the recent Geoffroy's leak (we do not understand yet why he
-                        took the vacuum...), we discovered this morning the sudden extinction of the JS langage. It may
-                        be link to the certain wilder's brain melting (they ate too much Nutella, oops..). Our Campus
+                    <p class="card-text">As predicted by the recent Geoffroy's leak , we discovered this morning the sudden extinction of the JS langage. It may
+                        be link to the certain wilder's brain<span id="dots">...</span><span id="more"> melting (they ate too much Nutella, oops..). Our Campus
                         Manager announced this morning she strives to relaunch ASAP the oriental dance lessons for the
-                        wilders already in reconversion. </p>
+                        wilders already in reconversion. </span></p>
+                    <button class="btn btn-primary stretched-link" onclick="myScrollingButton()" id="myBtn">Read more</button>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
-            <div class="card-deck">
-                <div class="card bg-light" style="max-width: 25rem;">
+            <div class="card-deck mb-3">
+                <div class="card bg-light" style="max-width: 30rem;">
                     <div class="card-header">Events</div>
                     <div class="card-body">
                         <h5 class="card-title"> Check our social events! </h5>
@@ -75,7 +74,7 @@
                         <a href="#" class="btn btn-primary stretched-link"> Contact us!</a>
                     </div>
                 </div>
-                <div class="card" style="max-width: 25rem;">
+                <div class="card" style="max-width: 30rem;">
                     <img class="card-img-top"
                         src=https://i1.wp.com/www.magicbeansandhappiness.com/wp-content/uploads/2019/11/IMG_1975.jpg?resize=780%2C600&ssl=1"
                         class="card-img-top" alt="The wilder of the month" alt="Card image cap">
@@ -86,7 +85,7 @@
                         <a href="#" class="btn btn-primary"> Discover! </a>
                     </div>
                 </div>
-                <div class="card" style="max-width: 25rem;">
+                <div class="card" style="max-width: 30rem;">
                     <div class="card-body">
                         <h5 class="card-title">WCS sanitary checkpoint</h5>
                         <iframe width="100%" height="362" src="https://www.youtube.com/embed/1kev2NqGXQM" frameborder="0"
@@ -243,11 +242,8 @@
             <!-- Copyright -->
     
         </footer>
-        <!-- Footer -->
-    </footer>
 
-    <!-- FOOTER -->
-
+    <script src="js\news.js"></script>
 </body>
 
 </html>
