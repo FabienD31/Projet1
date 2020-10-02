@@ -1,0 +1,64 @@
+/*START CSS RULES FOR CARDS.HTML */
+img {
+    max-height: 250px;
+    object-fit: contain;
+}
+.basket {
+    background-color: #aab9cf;
+    flex-grow: 1;
+    overflow: auto;
+}
+.card {
+    box-shadow: 3px 3px 3px grey;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+main {
+    height: 100vh;
+}
+aside {
+    background-color: #8f8389;
+}
+::placeholder {
+    font-style: italic;
+    font-size: 0.8em;
+  }
+@media screen and (max-width: 992px) {
+
+    .col-md-3 {
+        margin: 0 20%;
+    }
+
+}
+@media screen and (max-width: 767px) {
+
+    .col-md-3 {
+        margin: 0 10%;
+    }
+    main {
+        flex-direction: column;
+    }
+    main {
+        height: initial;
+    }
+}
+@media screen and (max-width: 576px) {
+
+    .col-md-3 {
+        margin: 0 5%;
+    }
+    
+}
+@media screen and (max-width: 360px) {
+
+    .col-md-3 {
+        margin: 0 2%;
+    }
+    
+}
+/* END CSS RULES FOR CARDS.HTML */
+
+
