@@ -1,7 +1,3 @@
-/*
-START FONCTIONS FOR CARDS.HTML
-*/
-
 // DATA CARDS
 const cards = {
     "0": {
@@ -371,20 +367,3 @@ for (let i = 0; i < checkbox.length; i++) {
 		
 	}, false);
 }
-
-for (; i<l; i++)
-    cb[i].addEventListener("change", function (){
-        if (document.querySelectorAll(":checked").length > 5)
-            this.checked = false;
-    }, false);
-
-//TAILLE BALISE MAIN DYNAMIQUE
-const nav = document.querySelector('nav');
-let height = parseFloat(nav.clientHeight);
-
-const main = document.querySelector('main');
-main.style.marginTop = height + "px";
-
-/*
-END FONCTIONS FOR CARDS.HTML
-*/
