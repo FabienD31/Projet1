@@ -30,14 +30,15 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="#"><img src="LogoCustomv1.jpg" width="85px" alt=""></a>
+            <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="Accueil.html">Accueil <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="Accueil.html">Accueil <span
+                            class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="cards.html">Nos Wilders à vendre</a>
                     <a class="nav-item nav-link" href="news.html">News</a>
                     <a class="nav-item nav-link" href="WilderDuMois.html">Le Wilder du mois</a>
@@ -47,8 +48,12 @@
             </div>
         </nav>
     </header>
-    <main class="pt-5 mt-5">
-        <section class="pt-5">
+    <main>
+        <div class="d-flex justify-content-center pt-5">
+            <img class="" src="LogoCustomv1.jpg" width="300px" alt="">
+        </div>
+
+        <section class="">
             <div class="container">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -56,21 +61,21 @@
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
+                    <div class="carousel-inner" style="height: 500px;">
+                        <div class="carousel-item active" style="height: 500px;">
                             <a href="cards.html"><img class="d-block w-100" src="./pictures/ImageCaroussel.jpg"
                                     alt="First slide"></a>
                             <div class="carousel-caption d-none d-md-block">
 
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <a href="news.html"><img class="d-block w-100" src="https://dev.rodpub.com/images/219/709_main.jpg"
-                                    alt="Second slide"></a>
+                        <div class="carousel-item" style="height: 500px;">
+                            <a class="m-auto d-block" href="news.html"><img class="d-block w-100"
+                                    src="https://dev.rodpub.com/images/219/709_main.jpg" alt="Second slide"></a>
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" style="height: 500px;">
                             <a href="WilderDuMois.html"><img class="d-block w-100"
                                     src="https://quedemaiasaissaclasuite.e-monsite.com/medias/images/depositphotos-111112638-stock-photo-employee-of-the-month-rubber.jpg"
                                     alt="Third slide"></a>
@@ -93,26 +98,29 @@
         </section>
         <hr>
         <section id="formulaire filtre">
-            <h2>Trouvez votre Wilder </h2>
+            <h2>Trouvez votre Wilder </h2><br>
             <form class="">
-                <div class="form-group col-md-4"> <!-- imput Experience -->
-                    <label for="inputState">Filtre</label>
-                    <select id="inputState" class="Experience form-control">
-                        <option selected>Experience</option>
-                        <option>Young</option>
-                        <option>Very Young</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-4">
+                <div class="d-flex justify-content-center">
+                    <div class="form-group d-flex col-md-4">
+                        <!-- imput Experience -->
+                        <label for="inputState"></label>
+                        <select id="inputState" class="Experience form-control">
+                            <option selected>Experience</option>
+                            <option>Young</option>
+                            <option>Very Young</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
 
-                    <select id="inputState" class="langage form-control">
-                        <option selected>Langage</option>
-                        <option>Javascript</option>
-                        <option>c#</option>
-                    </select>
+                        <select id="inputState" class="langage form-control">
+                            <option selected>Langage</option>
+                            <option>Javascript</option>
+                            <option>c#</option>
+                        </select>
+                    </div>
                 </div>
-                 <div id="adjectif"> 
-                    <section> <!-- premier tableau -->
+                <div class="form-group d-flex" id="adjectif">
+                    <section class="col py-2 text-center"> <!-- premier tableau -->
                         <div class=" Rocambolesque form-check">
                             <input class="form-check-input" type="checkbox" value="" id="Rocambolesque">
                             <label class="form-check-label" for="Rocambolesque">
@@ -144,40 +152,45 @@
                             </label>
                         </div>
 
+
                     </section>
-                    <section> <!-- deuxieme tableau -->
+                    <section class="col py-2">
+                        <!-- deuxieme tableau -->
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                                Default checkbox
+                            <input class="form-check-input" type="checkbox" value="" id="Delectable">
+                            <label class="form-check-label" for="Delectable">
+                                Delectable
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                                Default checkbox
+                            <input class="form-check-input" type="checkbox" value="" id="Hardi-e">
+                            <label class="form-check-label" for="Hardi-e">
+                                Hardi-e
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                                Default checkbox
+                            <input class="form-check-input" type="checkbox" value="" id="Passable">
+                            <label class="form-check-label" for="Passable">
+                                Passable
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                                Default checkbox
+                            <input class="form-check-input" type="checkbox" value="" id="Vivable">
+                            <label class="form-check-label" for="Vivable">
+                                Vivable
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                                Default checkbox
+                            <input class="form-check-input" type="checkbox" value="" id="Catacylsmique">
+                            <label class="form-check-label" for="Catacylsmique">
+                                Catacylsmique
                             </label>
                         </div>
+
                     </section>
-                </div>    
+
+                </div>
+                <input class="btn btn-primary" type="submit" value="Trouves ton Wilder">
             </form>
         </section>
     </main>
