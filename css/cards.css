@@ -22,6 +22,10 @@ main {
 aside {
     background-color: #8f8389;
 }
+::placeholder {
+    font-style: italic;
+    font-size: 0.8em;
+  }
 @media screen and (max-width: 992px) {
 
     .col-md-3 {
