@@ -1,4 +1,3 @@
-//START FONCTIONS FOR NEWS.HTML
 
 // function to create read more/less text button
 function myScrollingButton() {
