@@ -13,7 +13,7 @@ const cards = {
     },
     "1": {
         "name" : "Colas",
-        "img" : "./pictures/colas.jpg",
+        "img" : "./pictures/Colas.jpg",
         "alt" : "Keanu Reeves",
         "liId" : "Keanu",
         "aId" : "colas",
