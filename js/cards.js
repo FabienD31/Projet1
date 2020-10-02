@@ -1,14 +1,10 @@
-/*
-START FONCTIONS FOR CARDS.HTML
-*/
-
-//DATA CARDS
+// DATA CARDS
 const cards = {
     "0": {
         "name" : "Adrien F",
         "img" : "./pictures/AdrienF.jpg",
         "alt" : "jason momoa",
-        "liId" : "willsmith",
+        "liId" : "jason",
         "aId" : "adrien",
         "description" : `"Je suis parfait car je suis imparfait"`,
         "adjectifs" : "<b>Rocambolesque</b>, Mirobolant, <b>Hardi</b>, Vivable, <b>Cataclysmique</b>",
@@ -63,7 +59,7 @@ const cards = {
         "name" : "Harold",
         "img" : "./pictures/Harold.jpg",
         "alt" : "Pete Doherty",
-        "liId" : "georges",
+        "liId" : "pete",
         "aId" : "harold",
         "description" : `"Passionné de nouvelles technologies, de musique et de basket, j'aime profiter de chaque instant sur cette terre, avec mes amis, ma famille"`,
         "adjectifs" : "<b>Rocambolesque</b>, Délectable, <b>Hardi</b>, Vivable, <b>Cataclysmique</b>",
@@ -259,11 +255,11 @@ const cards = {
     }
 }
 
-//GENERATION DES CARDS
+// GENERATION DES CARDS
 const divContainer = document.querySelector('.container');
 let row;
 
-//FCT GENERATION NOMBRE ALEATOIRE
+// FCT GENERATION NOMBRE ALEATOIRE
 function entierAleatoire(min, max)
 {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -279,21 +275,21 @@ for (const i in cards) {
         divContainer.appendChild(divRow);
         row = 0;
     }
-    //DIV COL
+    // DIV COL
     const divCol = document.createElement('div');
-    divCol.classList.add('col-md-3', 'my-3');
+    divCol.classList.add('col-lg-3', 'my-3');
     divRow.appendChild(divCol);
-    //DIV CARD
+    // DIV CARD
     const divCard = document.createElement('div');
     divCard.classList.add('card', 'text-center');
     divCol.appendChild(divCard);
-    //IMG
+    // IMG
     const img = document.createElement('img');
     img.setAttribute("src", cards[i].img);
     img.setAttribute("alt", cards[i].alt);
     img.classList.add('card-img-top');
     divCard.appendChild(img);
-    //DIV CARD BODY
+    // DIV CARD BODY
     const divCardBody = document.createElement('div');
     divCardBody.classList.add('card-body');
     divCard.appendChild(divCardBody);
@@ -305,50 +301,49 @@ for (const i in cards) {
     p.innerHTML = cards[i].description;
     divCardBody.appendChild(h5);
     divCardBody.appendChild(p);
-    //UL
+    // UL
     const ul = document.createElement('ul');
     ul.classList.add('list-group', 'list-group-flush');
     divCard.appendChild(ul);
-    //LI 1
+    // LI 1
     const li1 = document.createElement('li');
     li1.classList.add('list-group-item');
     li1.innerHTML = cards[i].adjectifs;
     ul.appendChild(li1);
-    //LI 2
+    // LI 2
     const li2 = document.createElement('li');
     li2.classList.add('list-group-item');
     li2.innerHTML = cards[i].langage;
     ul.appendChild(li2);
-    //LI 3
+    // LI 3
     const li3 = document.createElement('li');
     li3.classList.add('list-group-item', 'font-weight-bold');
     li3.innerHTML = cards[i].projet;
     ul.appendChild(li3);
-    //LI 4
+    // LI 4
     const li4 = document.createElement('li');
     li4.classList.add('list-group-item', 'text-danger', 'font-weight-bold');
     li4.setAttribute('id', cards[i].liId);
     li4.innerHTML = entierAleatoire(100, 1000) + " €";
     ul.appendChild(li4);
-    //DIV CARD BODY 2
+    // DIV CARD BODY 2
     const divCardBody2 = document.createElement('div');
     divCardBody2.classList.add('card-body', 'text-center');
     divCard.appendChild(divCardBody2);
-    //BUTTON
+    // BUTTON
     const button = document.createElement('button');
     button.setAttribute('href', '#');
     button.setAttribute('id', cards[i].aId);
-    button.classList.add('btn', 'btn-primary');
+    button.classList.add('btn', 'btn-primary', 'price');
     button.innerHTML = "+ 100€";
     divCardBody2.appendChild(button);
 
     row++;
 }
 
-//EVENEMENTS BOUTONS
-const btn = document.querySelectorAll(".btn");
-
-//Ajour évènement sur chaque bouton
+// EVENEMENTS BOUTONS
+const btn = document.querySelectorAll(".price");
+// Ajout évènement sur chaque bouton
 for (let i = 0; i < btn.length; i++) {
     
     btn[i].addEventListener('click', () => {
@@ -358,6 +353,17 @@ for (let i = 0; i < btn.length; i++) {
     
 }
 
-/*
-END FONCTIONS FOR CARDS.HTML
-*/
+// SECURITE DES CHECKBOX
+let checkbox = document.querySelectorAll("[type=checkbox]");
+
+for (let i = 0; i < checkbox.length; i++) {
+
+	checkbox[i].addEventListener("change", function () {
+
+        if (document.querySelectorAll(":checked").length > 5) 
+        {
+            this.checked = false;
+        }
+		
+	}, false);
+}
