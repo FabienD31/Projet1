@@ -18,6 +18,7 @@ form {
 }
 main {
     height: 100vh;
+    margin-top: 90px;
 }
 aside {
     background-color: #8f8389;
