@@ -29,14 +29,15 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-topgit">
-            <a class="navbar-brand" href="#"></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#"><img src="pictures/LogoCustomv1.jpg" width="85px" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
+                    
                     <a class="nav-item nav-link active" href="Accueil.html">Accueil <span
                             class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="cards.html">Nos Wilders à vendre</a>
@@ -49,8 +50,8 @@
         </nav>
     </header>
     <main>
-        <div class="d-flex justify-content-center pt-5">
-            <img class="" src="pictures/LogoCustomv1.jpg" width="300px" alt="">
+        <div class="d-flex justify-content-center pt-5 mt-5">
+            <img class="" src="pictures/LogoCustomv1.jpg" width="30%" alt="">
         </div>
 
         <section class="">
@@ -61,22 +62,22 @@
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner" style="height: 500px;">
-                        <div class="carousel-item active" style="height: 500px;">
-                            <a href="cards.html"><img class="d-block w-100" src="./pictures/ImageCaroussel.jpg"
+                    <div class="carousel-inner d-block w-100">
+                        <div class="carousel-item active">
+                            <a href="cards.html"><img class="d-block w-100" style="max-height: 700px;" src="/pictures/ImageCaroussel.jpg"
                                     alt="First slide"></a>
                             <div class="carousel-caption d-none d-md-block">
 
                             </div>
                         </div>
-                        <div class="carousel-item" style="height: 500px;">
-                            <a class="m-auto d-block" href="news.html"><img class="d-block w-100"
+                        <div class="carousel-item">
+                            <a href="news.html"><img class="d-block w-100" style="max-height: 700px;"
                                     src="https://dev.rodpub.com/images/219/709_main.jpg" alt="Second slide"></a>
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
-                        <div class="carousel-item" style="height: 500px;">
-                            <a href="WilderDuMois.html"><img class="d-block w-100"
+                        <div class="carousel-item">
+                            <a href="WilderDuMois.html"><img class="d-block w-100" style="max-height: 700px;"
                                     src="https://quedemaiasaissaclasuite.e-monsite.com/medias/images/depositphotos-111112638-stock-photo-employee-of-the-month-rubber.jpg"
                                     alt="Third slide"></a>
                             <div class="carousel-caption d-none d-md-block">
@@ -98,7 +99,7 @@
         </section>
         <hr>
         <section id="formulaire filtre">
-            <h2>Trouvez votre Wilder </h2><br>
+            <h1 class="d-flex justify-content-center py-5">Trouvez votre Wilder </h1><br>
             <form class="">
                 <div class="d-flex justify-content-center">
                     <div class="form-group d-flex col-md-4">
@@ -106,8 +107,8 @@
                         <label for="inputState"></label>
                         <select id="inputState" class="Experience form-control">
                             <option selected>Experience</option>
-                            <option>Young</option>
-                            <option>Very Young</option>
+                            <option>Très Jeune</option>
+                            <option>Jeune</option>
                         </select>
                     </div>
                     <div class="form-group col-md-4">
@@ -120,41 +121,42 @@
                     </div>
                 </div>
                 <div class="form-group d-flex" id="adjectif">
-                    <section class="col py-2 text-center"> <!-- premier tableau -->
-                        <div class=" Rocambolesque form-check">
+                    <section class="col py-3 d-flex align-items-end flex-column flex">
+                        <!-- premier tableau -->
+                        <div class=" d-flex flex-row-reverse Rocambolesque form-check">
                             <input class="form-check-input" type="checkbox" value="" id="Rocambolesque">
-                            <label class="form-check-label" for="Rocambolesque">
+                            <label class="form-check-label pr-4" for="Rocambolesque">
                                 Rocambolesque
                             </label>
                         </div>
-                        <div class="Coquet-te form-check">
+                        <div class="d-flex flex-row-reverse Coquet-te form-check">
                             <input class="form-check-input" type="checkbox" value="" id="Coquet-te">
-                            <label class="form-check-label" for="Coquet-te">
+                            <label class="form-check-label pr-4" for="Coquet-te">
                                 Coquet-te
                             </label>
                         </div>
-                        <div class="Mirobolent-e form-check">
+                        <div class="d-flex flex-row-reverse Mirobolent-e form-check">
                             <input class="form-check-input" type="checkbox" value="" id="Mirobolent-e">
-                            <label class="form-check-label" for="Mirobolent">
+                            <label class="form-check-label pr-4" for="Mirobolent">
                                 Mirobolent
                             </label>
                         </div>
-                        <div class="Libidineux-se form-check">
+                        <div class="d-flex flex-row-reverse Libidineux-se form-check">
                             <input class="form-check-input" type="checkbox" value="" id="Libidineux-se">
-                            <label class="form-check-label" for="Libidineux-se">
+                            <label class="form-check-label pr-4" for="Libidineux-se">
                                 Libidineux-se
                             </label>
                         </div>
-                        <div class=" Recyclé-e form-check">
+                        <div class="d-flex flex-row-reverse Recyclé-e form-check">
                             <input class="form-check-input" type="checkbox" value="" id="Recyclé-e">
-                            <label class="form-check-label" for="Recyclé-e">
+                            <label class="form-check-label pr-4" for="Recyclé-e">
                                 Recyclé-e
                             </label>
                         </div>
 
 
                     </section>
-                    <section class="col py-2">
+                    <section class="col py-3">
                         <!-- deuxieme tableau -->
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="Delectable">
@@ -190,7 +192,10 @@
                     </section>
 
                 </div>
-                <input class="btn btn-primary" type="submit" value="Trouves ton Wilder">
+                <div class="d-flex justify-content-center py-5">
+                    <input class="btn btn-primary" type="submit" value="Go !">
+                </div>
+
             </form>
         </section>
     </main>
@@ -206,7 +211,7 @@
 
                     <!-- Grid column -->
                     <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                        <h6 class="mb-0">Get connected with us on social networks!</h6>
+                        <h6 class="mb-0">Rejoignez-nous sur les reseaux sociaux !</h6>
                     </div>
                     <!-- Grid column -->
 
@@ -253,11 +258,9 @@
                 <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
 
                     <!-- Content -->
-                    <h6 class="text-uppercase font-weight-bold">Company name</h6>
+                    <h6 class="text-uppercase font-weight-bold">Vente aux enchères</h6>
                     <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                        consectetur
-                        adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores repudiandae minus nihil sed aperiam distinctio atque praesentium dolore quam sequi provident id quos dicta earum, placeat quis nulla ea cupiditate..</p>
 
                 </div>
                 <!-- Grid column -->
@@ -313,13 +316,13 @@
                     <h6 class="text-uppercase font-weight-bold">Contact</h6>
                     <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                        <i class="fas fa-home mr-3"></i> Toulouse, Wild code School, FR</p>
                     <p>
-                        <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                        <i class="fas fa-envelope mr-3"></i> team-csharp@lapuissance.com</p>
                     <p>
-                        <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <i class="fas fa-phone mr-3"></i> + 33 08 36 65 65 65</p>
                     <p>
-                        <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                        <i class="fas fa-print mr-3"></i> + 33 118 218</p>
 
                 </div>
                 <!-- Grid column -->
@@ -332,7 +335,7 @@
 
         <!-- Copyright -->
         <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
-            <a class="dark-grey-text" href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+            <a class="dark-grey-text" href="https://mdbootstrap.com/"> WildCodeSchool</a>
         </div>
         <!-- Copyright -->
 
