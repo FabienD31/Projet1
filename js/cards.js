@@ -277,7 +277,7 @@ for (const i in cards) {
     }
     // DIV COL
     const divCol = document.createElement('div');
-    divCol.classList.add('col-lg-4', 'my-3');
+    divCol.classList.add('col-lg-4', 'my-3', 'cards-col-lg-4');
     divRow.appendChild(divCol);
     // DIV CARD
     const divCard = document.createElement('div');
@@ -287,14 +287,14 @@ for (const i in cards) {
     const img = document.createElement('img');
     img.setAttribute("src", cards[i].img);
     img.setAttribute("alt", cards[i].alt);
-    img.classList.add('card-img-top');
+    img.classList.add('card-img-top', 'cards-img');
     divCard.appendChild(img);
     // DIV CARD BODY
     const divCardBody = document.createElement('div');
     divCardBody.classList.add('card-body', 'card-color');
     divCard.appendChild(divCardBody);
     const h5 = document.createElement('h5');
-    h5.classList.add('card-title');
+    h5.classList.add('card-title', 'cards-card-title');
     h5.innerHTML = cards[i].name;
     const p = document.createElement('p');
     p.classList.add('card-text', 'font-italic');
@@ -307,22 +307,22 @@ for (const i in cards) {
     divCard.appendChild(ul);
     // LI 1
     const li1 = document.createElement('li');
-    li1.classList.add('list-group-item');
+    li1.classList.add('list-group-item', 'cards-list-group-item');
     li1.innerHTML = cards[i].adjectifs;
     ul.appendChild(li1);
     // LI 2
     const li2 = document.createElement('li');
-    li2.classList.add('list-group-item');
+    li2.classList.add('list-group-item', 'cards-list-group-item');
     li2.innerHTML = cards[i].langage;
     ul.appendChild(li2);
     // LI 3
     const li3 = document.createElement('li');
-    li3.classList.add('list-group-item', 'font-weight-bold');
+    li3.classList.add('list-group-item', 'font-weight-bold', 'cards-list-group-item');
     li3.innerHTML = cards[i].projet;
     ul.appendChild(li3);
     // LI 4
     const li4 = document.createElement('li');
-    li4.classList.add('list-group-item', 'text-danger', 'font-weight-bold');
+    li4.classList.add('list-group-item', 'text-danger', 'font-weight-bold', 'cards-list-group-item');
     li4.setAttribute('id', cards[i].liId);
     li4.innerHTML = entierAleatoire(100, 1000) + " €";
     ul.appendChild(li4);
@@ -334,7 +334,7 @@ for (const i in cards) {
     const button = document.createElement('button');
     button.setAttribute('href', '#');
     button.setAttribute('id', cards[i].aId);
-    button.classList.add('price', 'btn-styles');
+    button.classList.add('price', 'btn-styles', 'btn-styles-hover');
     button.innerHTML = "+ 100€";
     divCardBody2.appendChild(button);
 

@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WILD ENCHERE PROMO #9 - Cards</title>
         <!-- CSS -->
-        <link rel="stylesheet" href="./css/cards.css">
         <link rel="stylesheet" href="./css/common.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
         <!-- FONT -->
@@ -39,67 +38,67 @@
             </nav>
         </header>
 
-        <main class="d-flex">
+        <main class="d-flex cards-main">
 
-            <aside>
+            <aside class="cards-aside">
 
-                <form action="#" method="#">
+                <form action="#" method="#" class="cards-form">
                     
                     <h2 class="text-center pt-3">Rejoignez-nous !</h2>
 
-                        <input type="text" name="name" id="name" placeholder="Nom" required class="my-1">
-                        <input type="text" name="surname" id="surname" placeholder="Prenom" required class="my-1">
-                        <input type="text" name="age" id="age" placeholder="Age" required class="my-1">
+                        <input type="text" name="name" id="name" placeholder="Nom" required class="my-1 cards-placeholder">
+                        <input type="text" name="surname" id="surname" placeholder="Prenom" required class="my-1 cards-placeholder">
+                        <input type="text" name="age" id="age" placeholder="Age" required class="my-1 cards-placeholder">
 
                     <div class="d-flex flex my-1">
                         <div class="d-flex flex-column mx-1">
-                            <label class="label-trait">
+                            <label class="cards-label">
                                 <input type="checkbox" name="rocambolesque" id="rocambolesque">
                                 Rocambolesque
                             </label>
-                            <label class="label-trait">
+                            <label class="cards-label">
                                 <input type="checkbox" name="coquet" id="coquet">
                                 Coquet-te
                             </label>
-                            <label class="label-trait">
+                            <label class="cards-label">
                                 <input type="checkbox" name="delectable" id="delectable">
                                 Délectable
                             </label>
-                            <label class="label-trait">
+                            <label class="cards-label">
                                 <input type="checkbox" name="mirobolant" id="mirobolant">
                                 Mirobolant-e
                             </label>
-                            <label class="label-trait">
+                            <label class="cards-label">
                                 <input type="checkbox" name="hardi" id="hardi">
                                 Hardi-e
                             </label>
                         </div>
     
                         <div class="d-flex flex-column mx-1">
-                            <label class="label-trait">
+                            <label class="cards-label">
                                 <input type="checkbox" name="passable" id="passable">
                                 Passable
                             </label>
-                            <label class="label-trait">
+                            <label class="cards-label">
                                 <input type="checkbox" name="vivable" id="vivable">
                                 Vivable
                             </label>
-                            <label class="label-trait">
+                            <label class="cards-label">
                                 <input type="checkbox" name="recycle" id="recycle">
                                 Recyclé-e
                             </label>
-                            <label class="label-trait">
+                            <label class="cards-label">
                                 <input type="checkbox" name="libidineux" id="libidineux">
                                 Libidineux-se
                             </label>
-                            <label class="label-trait">
+                            <label class="cards-label">
                                 <input type="checkbox" name="cataclysmique" id="cataclysmique">
                                 Cataclysmique
                             </label>
                         </div>
                     </div>
 
-                    <textarea name="traits" id="traits" cols="30" rows="3" required maxlength="100" placeholder="Décris-toi en 2 lignes" ></textarea>
+                    <textarea name="traits" id="traits" cols="30" rows="3" required maxlength="100" placeholder="Décris-toi en 2 lignes" class="cards-placeholder"></textarea>
                     <p class="font-weight-lighter font-italic text-center">(100 caractères max)</p>
 
                     <p>Votre language préféré :</p>
@@ -120,7 +119,7 @@
 
             </aside>
 
-            <section class="basket">
+            <section class="cards-basket">
                 <h1 class="text-center py-5">PANIER DES WILDERS</h1>
                 <div class="container"></div>
             </section>
@@ -273,5 +272,6 @@
 
         <!-- <script src="./js/allpages.js"></script> -->
         <script src="./js/cards.js"></script>
+        <script src="./js/allpages.js"></script>
     </body>
 </html>
