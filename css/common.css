@@ -6,10 +6,18 @@ main {
 header {
     background-color: #e7d8c9;
 }
-footer {
+footer,.card,.card-body,.card-header {
     background-color: #e7d8c9;
     font-family: 'Montserrat', sans-serif;
 }
 .btn {
     background-color: #66d194;
 }
+
+h5 {
+    color: #E8544A;
+    font-weight: bold;
+}
+/* CSS RULES FOR NEWS.HTML */
+
+#more {display: none;}
