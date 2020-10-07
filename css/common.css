@@ -11,10 +11,13 @@ main
 }
 .nav-item:hover
 {   
-    box-shadow: 2px 2px 5px rgb(70, 70, 70);  
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgb(70, 70, 70);
+
 }
 .linkFooter:hover
-{
+{   
+    border-radius: 4px;
     box-shadow: 2px 2px 5px rgb(70, 70, 70); 
 }
 .mainClass
