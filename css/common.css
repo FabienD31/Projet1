@@ -35,6 +35,14 @@ button
     background-color: #66d194;
 }
 
+/* animation for WCS news title */
+.ml3 {
+    font-weight: 900;
+    font-size: 4.5em;
+    text-align: justify;
+  }
+/* end of animation for WCS news title */
+
 h5 {
     color: #E8544A;
     font-weight: bold;
