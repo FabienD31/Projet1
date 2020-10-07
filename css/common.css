@@ -1,0 +1,15 @@
+main {
+    background-color: #E8544A;
+    font-family: 'Montserrat', sans-serif;
+    color: #eceff2;
+}
+header {
+    background-color: #e7d8c9;
+}
+footer {
+    background-color: #e7d8c9;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn {
+    background-color: #66d194;
+}
