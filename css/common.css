@@ -13,3 +13,19 @@ footer {
 .btn-styles {
     background-color: #66d194;
 }
+@media screen and (max-width:767px)
+{
+    #buttonAside
+    {
+        display: none;
+    }
+}
+
+#buttonAside 
+{
+    position: fixed;
+    top: 20em;
+    left: 95%;
+    background-color: #1fd192;
+    border-radius: 70px;
+}
