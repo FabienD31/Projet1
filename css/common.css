@@ -1,8 +1,13 @@
+/*ROOT*/
+:root {
+    --size-cards-main : 120vh;
+}
+/*COMMON RULES*/
 main 
 {
     background-color: #E8544A;
-    font-family: 'Montserrat', sans-serif;
     color: #eceff2;
+    font-family: 'Montserrat', sans-serif;
 }
 a:hover
 {   
@@ -14,7 +19,16 @@ a:hover
 }
 footer,.card,.card-body,.card-header {
     background-color: #e7d8c9;
-    font-family: 'Montserrat', sans-serif;
+}
+.btn-styles {
+    background-color: #66d194;
+    padding: 0.5em 3em;
+    color: #ffffff;
+    margin: 0.5em auto;
+    border-style: initial;
+    border-color: initial;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #000000;
 }
 button
 {
@@ -29,3 +43,122 @@ h5 {
 
 #more {display: none;}
 #maskCor
+/*START CSS RULES FOR CARDS.HTML */
+.cards-card-title {
+    color: initial;
+}
+.cards-img {
+    max-height: 250px;
+    object-fit: contain;
+}
+.cards-basket {
+    flex-grow: 1;
+    overflow: auto;
+}
+.cards-form {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0.5em;
+}
+.cards-main {
+    height: var(--size-cards-main);
+}
+.cards-list-group-item {
+    color: initial;
+}
+.cards-aside {
+    background-color: #8f8389;
+    height: var(--size-cards-main);
+}
+.cards-label {
+    font-size: 0.8em;
+}
+.cards-placeholder::placeholder {
+    font-style: italic;
+    font-size: 0.8em;
+}
+/* END CSS RULES FOR CARDS.HTML */
+/*MEDIA QUERIES*/
+@media screen and (min-width: 1024px) 
+{
+    .btn-styles-hover:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .cards-col-lg-4 {
+        margin: 0 10%;
+    }
+}
+@media screen and (max-width: 767px) {
+
+    .cards-col-lg-4 {
+        margin: 0 5%;
+    }
+    .cards-main {
+        flex-direction: column;
+        height: initial;
+    }
+    .cards-aside {
+        height: initial;
+        padding-bottom: 1em;
+    }
+    .cards-form {
+        width: 70%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 576px) {
+
+    .cards-col-lg-4 {
+        margin: 0 5%;
+    }
+    .cards-form {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 360px) {
+
+    .cards-col-lg-4 {
+        margin: 0 5%;
+    }
+    .cards-form {
+        width: 90%;
+    }
+}
+@media screen and (max-width:767px)
+{
+    #buttonAside
+    {
+        display: none;
+    }
+}
+.School-map 
+{
+   width: 50%;
+   text-align: justify;
+   padding-left: 4em;
+
+}
+@media screen and (max-width:992px)
+{
+   .School-map
+   {
+       margin: 0;
+       padding: 0;
+       width: 400px;
+   } 
+}
+
+#buttonAside 
+{
+    position: fixed;
+    top: 20em;
+    left: 95%;
+    background-color: #1fd192;
+    border-radius: 70px;
+}
+
