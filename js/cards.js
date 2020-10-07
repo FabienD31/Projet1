@@ -1,14 +1,10 @@
-/*
-START FONCTIONS FOR CARDS.HTML
-*/
-
 // DATA CARDS
 const cards = {
     "0": {
         "name" : "Adrien F",
         "img" : "./pictures/AdrienF.jpg",
         "alt" : "jason momoa",
-        "liId" : "willsmith",
+        "liId" : "jason",
         "aId" : "adrien",
         "description" : `"Je suis parfait car je suis imparfait"`,
         "adjectifs" : "<b>Rocambolesque</b>, Mirobolant, <b>Hardi</b>, Vivable, <b>Cataclysmique</b>",
@@ -338,7 +334,7 @@ for (const i in cards) {
     const button = document.createElement('button');
     button.setAttribute('href', '#');
     button.setAttribute('id', cards[i].aId);
-    button.classList.add('btn', 'btn-primary');
+    button.classList.add('btn', 'btn-primary', 'price');
     button.innerHTML = "+ 100€";
     divCardBody2.appendChild(button);
 
@@ -346,7 +342,7 @@ for (const i in cards) {
 }
 
 // EVENEMENTS BOUTONS
-const btn = document.querySelectorAll(".btn");
+const btn = document.querySelectorAll(".price");
 // Ajout évènement sur chaque bouton
 for (let i = 0; i < btn.length; i++) {
     
@@ -358,31 +354,16 @@ for (let i = 0; i < btn.length; i++) {
 }
 
 // SECURITE DES CHECKBOX
-/*let checkbox = document.querySelector(".checkbox");
-let l = checkbox.length;
+let checkbox = document.querySelectorAll("[type=checkbox]");
 
-for (let i = 0; i < l; i++) {
+for (let i = 0; i < checkbox.length; i++) {
 
-    checkbox[i].addEventListener("change", () => {
-		if (document.querySelectorAll(":checked").length > 5) {
+	checkbox[i].addEventListener("change", function () {
+
+        if (document.querySelectorAll(":checked").length > 5) 
+        {
             this.checked = false;
         }
-    }, false);
-    
-}*/
-
-var cb = document.querySelectorAll("[type=checkbox]");
-
-var i = 0,
-	  l = cb.length;
-
-for (; i<l; i++)
-	cb[i].addEventListener("change", function (){
-		if (document.querySelectorAll(":checked").length > 5)
-			this.checked = false;
+		
 	}, false);
-	
-
-/*
-END FONCTIONS FOR CARDS.HTML
-*/
+}

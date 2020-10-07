@@ -18,10 +18,16 @@ form {
 }
 main {
     height: 100vh;
+    margin-top: 90px;
 }
 aside {
     background-color: #8f8389;
+    height: 100vh;
 }
+::placeholder {
+    font-style: italic;
+    font-size: 0.8em;
+  }
 @media screen and (max-width: 992px) {
 
     .col-md-3 {
@@ -58,4 +64,3 @@ aside {
 /* END CSS RULES FOR CARDS.HTML */
 
 
-/* contact / Lien site wild */
