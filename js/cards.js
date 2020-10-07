@@ -267,7 +267,7 @@ function entierAleatoire(min, max)
 
 for (const i in cards) {
 
-    if (row == 4 || row == undefined) {
+    if (row == 3 || row == undefined) {
         let hr = document.createElement('hr');
         var divRow = document.createElement('div');
         divRow.classList.add('row');
@@ -277,7 +277,7 @@ for (const i in cards) {
     }
     // DIV COL
     const divCol = document.createElement('div');
-    divCol.classList.add('col-lg-3', 'my-3');
+    divCol.classList.add('col-lg-4', 'my-3');
     divRow.appendChild(divCol);
     // DIV CARD
     const divCard = document.createElement('div');
@@ -291,7 +291,7 @@ for (const i in cards) {
     divCard.appendChild(img);
     // DIV CARD BODY
     const divCardBody = document.createElement('div');
-    divCardBody.classList.add('card-body');
+    divCardBody.classList.add('card-body', 'card-color');
     divCard.appendChild(divCardBody);
     const h5 = document.createElement('h5');
     h5.classList.add('card-title');
@@ -328,13 +328,13 @@ for (const i in cards) {
     ul.appendChild(li4);
     // DIV CARD BODY 2
     const divCardBody2 = document.createElement('div');
-    divCardBody2.classList.add('card-body', 'text-center');
+    divCardBody2.classList.add('card-body', 'text-center', 'card-color');
     divCard.appendChild(divCardBody2);
     // BUTTON
     const button = document.createElement('button');
     button.setAttribute('href', '#');
     button.setAttribute('id', cards[i].aId);
-    button.classList.add('btn', 'btn-primary', 'price');
+    button.classList.add('price', 'btn-styles');
     button.innerHTML = "+ 100€";
     divCardBody2.appendChild(button);
 
