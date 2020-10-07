@@ -1,15 +1,23 @@
-main {
+main 
+{
     background-color: #E8544A;
     font-family: 'Montserrat', sans-serif;
     color: #eceff2;
 }
-header {
-    background-color: #e7d8c9;
+a:hover
+{   
+    box-shadow: 2px 2px 5px rgb(70, 70, 70);  
+}   
+.navbar
+{
+    background-color: #e7d8c9 ;
 }
-footer {
+footer 
+{
     background-color: #e7d8c9;
     font-family: 'Montserrat', sans-serif;
 }
-.btn {
+.btn 
+{
     background-color: #66d194;
 }
