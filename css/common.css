@@ -20,6 +20,22 @@ footer {
         display: none;
     }
 }
+.School-map 
+{
+   width: 50%;
+   text-align: justify;
+   padding-left: 4em;
+
+}
+@media screen and (max-width:992px)
+{
+   .School-map
+   {
+       margin: 0;
+       padding: 0;
+       width: 400px;
+   } 
+}
 
 #buttonAside 
 {
@@ -29,3 +45,4 @@ footer {
     background-color: #1fd192;
     border-radius: 70px;
 }
+
