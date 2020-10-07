@@ -1,15 +1,21 @@
 main {
     background-color: #E8544A;
-    font-family: 'Montserrat', sans-serif;
     color: #eceff2;
+    font-family: 'Montserrat', sans-serif;
 }
-header {
+header, nav {
     background-color: #e7d8c9;
 }
 footer {
     background-color: #e7d8c9;
-    font-family: 'Montserrat', sans-serif;
 }
-.btn {
+.btn-styles {
     background-color: #66d194;
+    padding: 0.5em 3em;
+    color: #ffffff;
+    margin: 0.5em auto;
+    border-style: initial;
+    border-color: initial;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #000000;
 }
