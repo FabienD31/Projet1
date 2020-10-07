@@ -1,12 +1,19 @@
-main {
+main 
+{
     background-color: #E8544A;
     color: #eceff2;
     font-family: 'Montserrat', sans-serif;
 }
-header, nav {
-    background-color: #e7d8c9;
+a:hover
+{   
+    box-shadow: 2px 2px 5px rgb(70, 70, 70);  
+}   
+.navbar
+{
+    background-color: #e7d8c9 ;
 }
-footer {
+footer 
+{
     background-color: #e7d8c9;
 }
 .btn-styles {
@@ -18,4 +25,8 @@ footer {
     border-color: initial;
     border-radius: 5px;
     box-shadow: 2px 2px 2px #000000;
+}
+.btn 
+{
+    background-color: #66d194;
 }
