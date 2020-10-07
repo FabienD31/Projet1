@@ -121,3 +121,36 @@ footer
         width: 90%;
     }
 }
+@media screen and (max-width:767px)
+{
+    #buttonAside
+    {
+        display: none;
+    }
+}
+.School-map 
+{
+   width: 50%;
+   text-align: justify;
+   padding-left: 4em;
+
+}
+@media screen and (max-width:992px)
+{
+   .School-map
+   {
+       margin: 0;
+       padding: 0;
+       width: 400px;
+   } 
+}
+
+#buttonAside 
+{
+    position: fixed;
+    top: 20em;
+    left: 95%;
+    background-color: #1fd192;
+    border-radius: 70px;
+}
+
