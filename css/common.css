@@ -38,6 +38,7 @@ main
 }
 .image-clignote  
 {
+    width: 33%;
     animation-duration: 2s;
     animation-name: clignoter;
     animation-timing-function: ease-in;
@@ -224,12 +225,33 @@ h5
     {
         flex-direction: column;
     }
+    .accueilTitle
+    {
+     font-size: 1.5em;
+    }
 
     .cards-col-lg-4 {
         margin: 0 5%;
     }
     .cards-form {
         width: 80%;
+    }
+    .image-clignote  
+    {
+        width: 50%;
+        animation-duration: 2s;
+        animation-name: clignoter;
+        animation-timing-function: ease-in;
+    
+    }
+ @keyframes clignoter
+  {
+    
+        0%   { opacity:0; }
+        20%  { opacity:0.3; }
+        40%  {opacity:0.5; }
+        70%  { opacity:0.8; }
+        100% { opacity:1; }
     }
 }
 @media screen and (max-width: 360px) 
