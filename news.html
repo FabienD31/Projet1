@@ -7,7 +7,8 @@
     <title>WILD ENCHERE PROMO #9</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -29,15 +30,17 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="#"><img src="./pictures/LogoCustomv1.jpg" width="85px" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="index.html"><img src="pictures/logoCercle.png" width="85px" alt=""></a>
+            <button class="navbar-toggler" class="btn-styles" class="btn-styles-hover"type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="Accueil.html">Accueil <span class="sr-only">(current)</span></a>
+                    
+                    <a class="nav-item nav-link active" href="index.html">Accueil <span
+                            class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="cards.html">Nos Wilders à vendre</a>
                     <a class="nav-item nav-link" href="news.html">News</a>
                     <a class="nav-item nav-link" href="WilderDuMois.html">Le Wilder du mois</a>
@@ -48,203 +51,216 @@
         </nav>
     </header>
     <main>
-        <div class="container ">
-            <h3 class="text-sm-center py-3">The Wild Code News</h3>
-            <div class="card mb-3">
-                <img class="card-img-top"
-                    src="https://media-cdn.tripadvisor.com/media/photo-s/10/9d/4c/f1/les-moutons-au-sommet.jpg"
-                    alt="Image test 1">
-                <div class="card-body">
+        <!-- Bouton lien Site web Wild code school Toulouse -->
+        <div id="buttonAside" class="rounded-right">
+            <div>
+            <a type="button" href="https://www.wildcodeschool.com/fr-FR/campus/toulouse"
+                target="_blank"><img src="./pictures/icon-web.png" alt="Wild code school Toulouse" width="90%"></a>
+            </div>
+        </div>
+        <div class="container">
+            <!-- Main card of news -->
+            <h1 class="ml3">The Wild Code News...</h1>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            <div class="card mb-3 news-card">
+
+                    <img src="https://www.wildcodeschool.com/static/imgs/logo.png" alt="news"class="img-fluid img-rounded ">
+
+                <div class="card-body news-card-body">
                     <h5 class="card-title">C# the new trend, what will become all the JS developers???</h5>
                     <p class="card-text">As predicted by the recent Geoffroy's leak , we discovered this morning the sudden extinction of the JS langage. It may
-                        be link to the certain wilder's brain<span id="dots">...</span><span id="more"> melting (they ate too much Nutella, oops..). Our Campus
-                        Manager announced this morning she strives to relaunch ASAP the oriental dance lessons for the
-                        wilders already in reconversion. </span></p>
-                    <button class="btn btn-primary stretched-link" onclick="myScrollingButton()" id="myBtn">Read more</button>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    be link to the certain wilder's brain 
+                    <!-- Hidden part of the text start here -->
+                    <span id="dots">...</span><span id="more"> 
+                    melting (they ate too much Nutella, oops..). Our Campus
+                    Manager announced this morning she strives to relaunch ASAP the oriental dance lessons for the
+                    wilders already in reconversion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span></p>
+                    <!-- button to hide (or not) the content -->
+                    <button class="btn-styles" class="btn-styles-hover" onclick="myScrollingButton()" id="myBtn">Read more</button>
+                    <p class="card-text"><small class="text-muted">Last updated 4 days ago</small></p>
                 </div>
             </div>
-            <div class="card-deck mb-3">
-                <div class="card bg-light" style="max-width: 30rem;">
-                    <div class="card-header">Events</div>
-                    <div class="card-body">
-                        <h5 class="card-title"> Check our social events! </h5>
-                        <iframe src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FParis&amp;src=OTVlZXVtcWowZWZzcXVrY3BvN2dwaGN1OHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237CB342&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK" style="border:solid 1px #777" width="100%" height="300" frameborder="0" scrolling="no"></iframe>
+            <!-- new card bloc -->
+            <div class="card-deck pb-3">
+                <!-- Event card with color hover effect-->
+                <div class="card view overlay mb-3 news-card" style="max-width: 100%; min-width: 18rem;">
+                    <img src="https://cdn.icon-icons.com/icons2/317/PNG/512/calendar-icon_34471.png"class="img-fluid " alt="smaple image">
+                    <div class="mask flex-center rgba-teal-light">
+                        <button class="btn-styles" class="btn-styles-hover" ><a href = 'https://calendar.google.com/calendar/embed?src=95eeumqj0efsqukcpo7gphcu8s%40group.calendar.google.com&ctz=Europe%2FParis'>Check events</a></button>
+                    </div>
+                    <div class="card-body news-card-body">
+                        <h5 class="card-title"> WCS social events </h5>
                         <p class="card-text"> Meet our Wilders at our social events. Come to see them plant tomatoes and servers...</p>
-                        <a href="#" class="btn btn-primary stretched-link"> Contact us!</a>
                     </div>
                 </div>
-                <div class="card" style="max-width: 30rem;">
-                    <img class="card-img-top"
-                        src=https://i1.wp.com/www.magicbeansandhappiness.com/wp-content/uploads/2019/11/IMG_1975.jpg?resize=780%2C600&ssl=1"
-                        class="card-img-top" alt="The wilder of the month" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">The Wilder of the month</h5>
-                        <p class="card-text">One new Wilder awarded this month! Our Campus Manager selected for you the best
-                            wilder profile...</p>
-                        <a href="#" class="btn btn-primary"> Discover! </a>
+                <!-- Wilder of the month : second card with zoom hover effect on the picture-->
+                <div class="card view overlay zoom mb-3 news-card" style="max-width: 100%; min-width: 18rem;">
+                    <img src="pictures\crown-png-transparent-clip-art-image-5a1cea756cd8e5.3359093015118444694459.png"class="img-fluid pt=5" alt="the crown">
+                        <div class="mask flex d-flex align-items-end">
+                            <button class="btn-styles" class="btn-styles-hover"><a href="WilderDuMois.html"> Discover! </a></button>
+                    </div>
+                    <div class="card-body news-card-body">
+                        <h5 class="card-title text-center">The Wilder of the month</h5>
+                        <p class="card-text">One new Wilder awarded this month! Our Campus Manager selected for you the best wilder profile...</p>
                     </div>
                 </div>
-                <div class="card" style="max-width: 30rem;">
-                    <div class="card-body">
+                <!-- Third card "sanitary checkpoint"with iframe of youtube video-->
+                <div class="card mb-3 news-card" style="max-width: 100%; min-width: 18rem;">
+                    <div class="card-body news-card-body">
                         <h5 class="card-title">WCS sanitary checkpoint</h5>
-                        <iframe width="100%" height="362" src="https://www.youtube.com/embed/1kev2NqGXQM" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/1kev2NqGXQM" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                         <p class="card-text">Because we commit to sale only healthy wilders, we ask to visitors and customers to
-                            be carefull in the handling of wilders. Please do not touch every wilders. Please refer to our sales
-                            terms and conditions.</p>
+                        be carefull in the handling of wilders. Please do not touch every wilders. Please refer to our sales terms and conditions.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </main>
-    <footer>
-        <!-- Footer -->
-        <footer class="page-footer font-small blue-grey lighten-5">
+    <footer class="page-footer font-small">
 
-            <div style="background-color: #21d192;">
-                <div class="container">
-    
-                    <!-- Grid row-->
-                    <div class="row py-4 d-flex align-items-center">
-    
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                            <h6 class="mb-0">Get connected with us on social networks!</h6>
-                        </div>
-                        <!-- Grid column -->
-    
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-7 text-center text-md-right">
-    
-                            <!-- Facebook -->
-                            <a class="fb-ic">
-                                <i class="fab fa-facebook-f white-text mr-4"> </i>
-                            </a>
-                            <!-- Twitter -->
-                            <a class="tw-ic">
-                                <i class="fab fa-twitter white-text mr-4"> </i>
-                            </a>
-                            <!-- Google +-->
-                            <a class="gplus-ic">
-                                <i class="fab fa-google-plus-g white-text mr-4"> </i>
-                            </a>
-                            <!--Linkedin -->
-                            <a class="li-ic">
-                                <i class="fab fa-linkedin-in white-text mr-4"> </i>
-                            </a>
-                            <!--Instagram-->
-                            <a class="ins-ic">
-                                <i class="fab fa-instagram white-text"> </i>
-                            </a>
-    
-                        </div>
-                        <!-- Grid column -->
-    
+        <div style="background-color: #21d192;">
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0">Rejoignez-nous sur les reseaux sociaux !</h6>
                     </div>
-                    <!-- Grid row-->
-    
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic" href="https://www.facebook.com/WildCodeSchool">
+                            <i class="linkFooter fab fa-facebook-f white-text mr-4"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic" href="https://twitter.com/wildcodeschool">
+                            <i class="linkFooter fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="linkFooter fab fa-google-plus-g white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic" href="https://www.linkedin.com/school/wild-codes-chool/">
+                            <i class="linkFooter fab fa-linkedin-in white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic" href="https://www.instagram.com/wildcodeschoolofficial/">
+                            <i class="linkFooter fab fa-instagram white-text"> </i>
+                        </a>
+
+                    </div>
+                    <!-- Grid column -->
+
                 </div>
+                <!-- Grid row-->
+
             </div>
-    
-            <!-- Footer Links -->
-            <div class="container text-center text-md-left mt-5">
-    
-                <!-- Grid row -->
-                <div class="row mt-3 dark-grey-text">
-    
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-    
-                        <!-- Content -->
-                        <h6 class="text-uppercase font-weight-bold">Company name</h6>
-                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                            consectetur
-                            adipisicing elit.</p>
-    
-                    </div>
-                    <!-- Grid column -->
-    
-                    <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-    
-                        <!-- Links -->
-                        <h6 class="text-uppercase font-weight-bold">Products</h6>
-                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                        <p>
-                            <a class="dark-grey-text" href="#!">MDBootstrap</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="#!">MDWordPress</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="#!">BrandFlow</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
-                        </p>
-    
-                    </div>
-                    <!-- Grid column -->
-    
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-    
-                        <!-- Links -->
-                        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
-                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                        <p>
-                            <a class="dark-grey-text" href="#!">Your Account</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="#!">Become an Affiliate</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="#!">Shipping Rates</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="#!">Help</a>
-                        </p>
-    
-                    </div>
-                    <!-- Grid column -->
-    
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-    
-                        <!-- Links -->
-                        <h6 class="text-uppercase font-weight-bold">Contact</h6>
-                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                        <p>
-                            <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                        <p>
-                            <i class="fas fa-envelope mr-3"></i> info@example.com</p>
-                        <p>
-                            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                        <p>
-                            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-    
-                    </div>
-                    <!-- Grid column -->
-    
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3 dark-grey-text">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">Vente aux enchères</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Notre site mets à disposition des wilders sortis fraichement de l'ecole. Si vous voulez participer aux ventes aux enchères ou bien si vous voulez intégrer l'ecole pour suivre nos formations, veuillez nous contacter. On vous attends !</p>
+
                 </div>
-                <!-- Grid row -->
-    
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">A propos de nous</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a class="linkFooter dark-grey-text" href="https://www.wildcodeschool.com/fr-FR">Notre Ecole</a>
+                    </p>
+                    <p>
+                        <a class="linkFooter dark-grey-text" href="https://www.wildcodeschool.com/fr-FR/formations/front-end-developer-part-time">Nos Formations</a>
+                    </p>
+                    <p>
+                        <a class="linkFooter dark-grey-text" href="cards.html">Nos Wilders</a>
+                    </p>
+
+
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a class="linkFooter dark-grey-text" href="#!">Your Account</a>
+                    </p>
+                    <p>
+                        <a class="linkFooter dark-grey-text" href="#!">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a class="linkFooter dark-grey-text" href="#!">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a class="linkFooter dark-grey-text" href="contact.html">Contact</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i> Toulouse, Wild code School, FR</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> team-csharp@lapuissance.com</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> + 33 08 36 65 65 65</p>
+                    <p>
+                        <i class="fas fa-print mr-3"></i> + 33 118 218</p>
+
+                </div>
+                <!-- Grid column -->
+
             </div>
-            <!-- Footer Links -->
-    
-            <!-- Copyright -->
-            <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
-                <a class="dark-grey-text" href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-            </div>
-            <!-- Copyright -->
-    
-        </footer>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
+            <a class="linkFooter dark-grey-text" href="https://mdbootstrap.com/"> WildCodeSchool</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
 
     <script src="./js/news.js"></script>
     <script src="./js/allpages.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </body>
 
 </html>

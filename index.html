@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WILD ENCHERE PROMO #9</title>
-    <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -29,16 +31,16 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="#"><img src="pictures/LogoCustomv1.jpg" width="85px" alt=""></a>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="index.html"><img src="./pictures/logoCercle.png" width="85px" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    
-                    <a class="nav-item nav-link active" href="Accueil.html">Accueil <span
+
+                    <a class="nav-item nav-link active" href="index.html">Accueil <span
                             class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="cards.html">Nos Wilders à vendre</a>
                     <a class="nav-item nav-link" href="news.html">News</a>
@@ -50,34 +52,50 @@
         </nav>
     </header>
     <main>
-        <div class="d-flex justify-content-center pt-5 mt-5">
-            <img class="" src="pictures/LogoCustomv1.jpg" width="30%" alt="">
+        <!-- Bouton lien Site web Wild code school Toulouse -->
+        <div id="buttonAside" class="rounded-right">
+            <div>
+            <a type="button" href="https://www.wildcodeschool.com/fr-FR/campus/toulouse"
+                target="_blank"><img src="./pictures/icon-web.png" alt="Wild code school Toulouse" width="90%"></a>
+            </div>
+        </div>
+        <div class="mainClass">
+            <img class="image-clignote ml-5 mr-3" src="./pictures/logoCercle.png" width="25%" alt="">
+            <div class="textTitle ml-3 d-block text-center">
+                <H1 class="accueilTitle">VENTE AUX ENCHERES !</H1>
+                <p class="pAccueil">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste reprehenderit magni ullam vero cupiditate dolor iusto tempora impedit consectetur, dolorum debitis veniam soluta, possimus quam? Inventore tempore quibusdam sunt dolores.</p>
+            </div>
+
         </div>
 
-        <section class="">
+        <section class="mt-2">
             <div class="container">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li title=" Nos Wilders" data-target="#carouselExampleIndicators" data-slide-to="0"
+                            class="active"></li>
+                        <li title="News" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li title="Wilder du mois" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner d-block w-100">
+                    <div class="carousel-inner d-block">
                         <div class="carousel-item active">
-                            <a href="cards.html"><img class="d-block w-100" style="max-height: 700px;" src="/pictures/ImageCaroussel.jpg"
-                                    alt="First slide"></a>
+                            <a href="cards.html"><img class="d-block"
+                                    style="max-height: 600px; width: 85%; margin: auto;"
+                                    src="./pictures/ImageCaroussel.jpg" alt="First slide"></a>
                             <div class="carousel-caption d-none d-md-block">
 
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <a href="news.html"><img class="d-block w-100" style="max-height: 700px;"
+                            <a href="news.html"><img class="d-block"
+                                    style="max-height: 600px; width: 85%; margin: auto; padding-bottom: 19%"
                                     src="https://dev.rodpub.com/images/219/709_main.jpg" alt="Second slide"></a>
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <a href="WilderDuMois.html"><img class="d-block w-100" style="max-height: 700px;"
+                            <a href="WilderDuMois.html"><img class="d-block"
+                                    style="max-height: 600px; width: 85%; margin: auto; padding-bottom: 3.5%;"
                                     src="https://quedemaiasaissaclasuite.e-monsite.com/medias/images/depositphotos-111112638-stock-photo-employee-of-the-month-rubber.jpg"
                                     alt="Third slide"></a>
                             <div class="carousel-caption d-none d-md-block">
@@ -193,15 +211,15 @@
 
                 </div>
                 <div class="d-flex justify-content-center py-5">
-                    <input class="btn btn-primary" type="submit" value="Go !">
+                    <input class="btn-styles btn-styles-hover" type="submit" value="Go !">
                 </div>
 
             </form>
         </section>
     </main>
-    <hr>
+
     <!-- Footer -->
-    <footer class="page-footer font-small blue-grey lighten-5">
+    <footer class="page-footer font-small">
 
         <div style="background-color: #21d192;">
             <div class="container">
@@ -219,24 +237,24 @@
                     <div class="col-md-6 col-lg-7 text-center text-md-right">
 
                         <!-- Facebook -->
-                        <a class="fb-ic">
-                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        <a class="fb-ic" href="https://www.facebook.com/WildCodeSchool">
+                            <i class="linkFooter fab fa-facebook-f white-text mr-4"> </i>
                         </a>
                         <!-- Twitter -->
-                        <a class="tw-ic">
-                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        <a class="tw-ic" href="https://twitter.com/wildcodeschool">
+                            <i class="linkFooter fab fa-twitter white-text mr-4"> </i>
                         </a>
                         <!-- Google +-->
                         <a class="gplus-ic">
-                            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                            <i class="linkFooter fab fa-google-plus-g white-text mr-4"> </i>
                         </a>
                         <!--Linkedin -->
-                        <a class="li-ic">
-                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        <a class="li-ic" href="https://www.linkedin.com/school/wild-codes-chool/">
+                            <i class="linkFooter fab fa-linkedin-in white-text mr-4"> </i>
                         </a>
                         <!--Instagram-->
-                        <a class="ins-ic">
-                            <i class="fab fa-instagram white-text"> </i>
+                        <a class="ins-ic" href="https://www.instagram.com/wildcodeschoolofficial/">
+                            <i class="linkFooter fab fa-instagram white-text"> </i>
                         </a>
 
                     </div>
@@ -260,7 +278,9 @@
                     <!-- Content -->
                     <h6 class="text-uppercase font-weight-bold">Vente aux enchères</h6>
                     <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores repudiandae minus nihil sed aperiam distinctio atque praesentium dolore quam sequi provident id quos dicta earum, placeat quis nulla ea cupiditate..</p>
+                    <p>Notre site mets à disposition des wilders sortis fraichement de l'ecole. Si vous voulez
+                        participer aux ventes aux enchères ou bien si vous voulez intégrer l'ecole pour suivre nos
+                        formations, veuillez nous contacter. On vous attends !</p>
 
                 </div>
                 <!-- Grid column -->
@@ -269,20 +289,21 @@
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
                     <!-- Links -->
-                    <h6 class="text-uppercase font-weight-bold">Products</h6>
+                    <h6 class="text-uppercase font-weight-bold">A propos de nous</h6>
                     <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <a class="dark-grey-text" href="#!">MDBootstrap</a>
+                        <a class="linkFooter dark-grey-text" href="https://www.wildcodeschool.com/fr-FR">Notre Ecole</a>
                     </p>
                     <p>
-                        <a class="dark-grey-text" href="#!">MDWordPress</a>
+                        <a class="linkFooter dark-grey-text"
+                            href="https://www.wildcodeschool.com/fr-FR/formations/front-end-developer-part-time">Nos
+                            Formations</a>
                     </p>
                     <p>
-                        <a class="dark-grey-text" href="#!">BrandFlow</a>
+                        <a class="linkFooter dark-grey-text" href="cards.html">Nos Wilders</a>
                     </p>
-                    <p>
-                        <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
-                    </p>
+
+
 
                 </div>
                 <!-- Grid column -->
@@ -294,16 +315,16 @@
                     <h6 class="text-uppercase font-weight-bold">Useful links</h6>
                     <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <a class="dark-grey-text" href="#!">Your Account</a>
+                        <a class="linkFooter dark-grey-text" href="#!">Your Account</a>
                     </p>
                     <p>
-                        <a class="dark-grey-text" href="#!">Become an Affiliate</a>
+                        <a class="linkFooter dark-grey-text" href="#!">Become an Affiliate</a>
                     </p>
                     <p>
-                        <a class="dark-grey-text" href="#!">Shipping Rates</a>
+                        <a class="linkFooter dark-grey-text" href="#!">Shipping Rates</a>
                     </p>
                     <p>
-                        <a class="dark-grey-text" href="#!">Help</a>
+                        <a class="linkFooter dark-grey-text" href="contact.html">Contact</a>
                     </p>
 
                 </div>
@@ -335,7 +356,7 @@
 
         <!-- Copyright -->
         <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
-            <a class="dark-grey-text" href="https://mdbootstrap.com/"> WildCodeSchool</a>
+            <a class="linkFooter dark-grey-text" href="https://mdbootstrap.com/"> WildCodeSchool</a>
         </div>
         <!-- Copyright -->
 

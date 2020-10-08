@@ -1,41 +1,24 @@
-# Projet1
-Projet 1 Wild/Wilders, enchères
----------------------------------
-### Fil rouge :
+# Wild Code School for Sale
 
-- Formulaire GOOGLE (description des wilders) :
-	- Photo
-	- Adjectifs (5 minimum)
-	- Description
-	- Languages
-	- Projet ideal
+Projet 1 - Site statique de vente aux enchères de Wilders
 
-- PAGES :
-	- Accueil (NAV + FOOTER)
-		- Titre : PROMO WILD #9
-		- Caroussel
-			- Lien rapide => description ?
-			- ?...
-		- Lien FOOTER => Ethique
-		- NAV => menu burger
-	- Liste Wilders
-		- Créer template de vignette
-		- Filtres (selon infos récoltés)
-		- 6 X 5 ?
-		- Enchère
-	- Sujet Hebdo
-		- Article
-	- Contact
-		- About US
-		- Formulaire
-	- Profil de la semaine
-		- 1 wilder
+<img  src="https://img.shields.io/badge/Uses-HTML-e44c21"  alt="made with html">  <img  src="https://img.shields.io/badge/Uses-CSS-274ee4"  alt="uses css">  <img  src="https://img.shields.io/badge/Uses-JS-efd81e"  alt="uses javascript">  <img  src="https://img.shields.io/badge/Uses-Bootstrap-543b79"  alt="uses bootstrap">  <img  src="https://img.shields.io/badge/Uses-Git-red.svg"  alt="uses git">  <img  src="https://img.shields.io/badge/Uses-VS Code-22a1eb"  alt="uses vscode">
 
-- GITHUB : 
-	- CREATION REPO
-	- 1 branche par équipier
----------------------------------
-###Lien vers le WIREFRAME
+## A propos :
 
-http://wireframepro.mockflow.com/view/M8544a8a3684caba63d8df04a09ba7f8a1601374661160#/page/27ec8547002e4c2fa2f0eeca6d435116
 
+  "EN CONSTRUCTION"
+
+
+## Links
+
+[WireFrame](http://wireframepro.mockflow.com/view/M8544a8a3684caba63d8df04a09ba7f8a1601374661160#/page/27ec8547002e4c2fa2f0eeca6d435116)
+
+[Site](https://fabiend31.github.io/Projet1/)
+
+## Notre Equipe
+
+- Coralie ESPASA [(GitHub)](https://github.com/CoralieEspasa)
+- Hervé MESTE [(GitHub)](https://github.com/gloups31)
+- Fabien DESNOUES [(GitHub)](https://github.com/FabienD31)
+- Sébastien BAGES [(GitHub)](https://github.com/sebastienbages)
