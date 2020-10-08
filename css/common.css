@@ -11,13 +11,11 @@ main
     background-color: #E8544A;
     color: #eceff2;
 }
-
 .accueilTitle
 {
     font-size: 3em;
     
 }
-
 .nav-item:hover
 {   
     border-radius: 4px;
@@ -29,14 +27,6 @@ main
     border-radius: 4px;
     box-shadow: 2px 2px 5px rgb(70, 70, 70); 
 }
-/* @media screen and (max-width: 600px)
-{
-    .mainClass
-    {
-        display: block;
-        flex-direction: column;
-    }
-} */
 .mainClass
 {
     padding-top: 120px;
@@ -44,6 +34,7 @@ main
     align-items: center;
     justify-content: space-around;
     flex-direction: row-reverse;
+    height: 100vh;
 }
 .image-clignote  
 {
@@ -51,7 +42,7 @@ main
     animation-name: clignoter;
     animation-timing-function: ease-in;
     
- }
+}
  @keyframes clignoter {
     
    0%   { opacity:0; }
@@ -59,53 +50,53 @@ main
    40%  {opacity:0.5; }
    70%  { opacity:0.8; }
    100% { opacity:1; }
- }
+}
  /* Tooltip container */
 .tooltip {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-  }
+}
   
-  /* Tooltip text */
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 200px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
+/* Tooltip text */
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 200px;
+background-color: #555;
+color: #fff;
+text-align: center;
+padding: 5px 0;
+border-radius: 6px;
   
-    /* Position the tooltip text */
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
+/* Position the tooltip text */
+position: absolute;
+z-index: 1;
+bottom: 125%;
+left: 50%;
+margin-left: -60px;
+
+/* Fade in tooltip */
+opacity: 0;
+transition: opacity 0.3s;
+}
   
-    /* Fade in tooltip */
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  /* Tooltip arrow */
-  .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #555 transparent transparent transparent;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext 
+{
+visibility: visible;
+opacity: 1;
+}
 .navbar
 {
     background-color: #e7d8c9 ;
@@ -128,55 +119,66 @@ button
 {
     background-color: #66d194;
 }
-
 /* animation for WCS news title */
-.ml3 {
-    font-weight: 900;
-    font-size: 4.5em;
-    text-align: justify;
-  }
+.ml3 
+{
+font-weight: 900;
+font-size: 4.5em;
+text-align: justify;
+}
 /* end of animation for WCS news title */
-
-h5 {
+h5 
+{
     color: #E8544A;
     font-weight: bold;
 }
 /* CSS RULES FOR NEWS.HTML */
 
-#more {display: none;}
-#maskCor
+#more 
+{
+    display: none;
+}
 /*START CSS RULES FOR CARDS.HTML */
-.cards-card-title {
+.cards-card-title 
+{
     color: initial;
 }
-.cards-img {
+.cards-img 
+{
     max-height: 250px;
     object-fit: contain;
 }
-.cards-basket {
+.cards-basket 
+{
     flex-grow: 1;
     overflow: auto;
 }
-.cards-form {
+.cards-form 
+{
     display: flex;
     flex-direction: column;
     margin: 1em 0.5em;
 }
-.cards-main {
+.cards-main 
+{
     height: var(--size-cards-main);
     margin-top: 111px;
 }
-.cards-list-group-item {
+.cards-list-group-item 
+{
     color: initial;
 }
-.cards-aside {
+.cards-aside 
+{
     background-color: #8f8389;
     height: var(--size-cards-main);
 }
-.cards-label {
+.cards-label 
+{
     font-size: 0.8em;
 }
-.cards-placeholder::placeholder {
+.cards-placeholder::placeholder 
+{
     font-style: italic;
     font-size: 0.8em;
 }
@@ -190,16 +192,15 @@ h5 {
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) 
+{
 
     .cards-col-lg-4 {
         margin: 0 10%;
     }
 }
-@media screen and (max-width: 767px) {
-    
-
-
+@media screen and (max-width: 767px) 
+{
     .cards-col-lg-4 {
         margin: 0 5%;
     }
@@ -216,7 +217,8 @@ h5 {
         margin: auto;
     }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) 
+{
 
     .mainClass
     {
@@ -230,8 +232,8 @@ h5 {
         width: 80%;
     }
 }
-@media screen and (max-width: 360px) {
-
+@media screen and (max-width: 360px) 
+{
     .cards-col-lg-4 {
         margin: 0 5%;
     }
@@ -271,4 +273,3 @@ h5 {
     background-color: #1fd192;
     border-radius: 70px;
 }
-
