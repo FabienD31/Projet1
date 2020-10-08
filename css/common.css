@@ -11,10 +11,11 @@ main
     background-color: #E8544A;
     color: #eceff2;
 }
+
 .accueilTitle
 {
-    
     font-size: 3em;
+    
 }
 
 .nav-item:hover
@@ -28,6 +29,14 @@ main
     border-radius: 4px;
     box-shadow: 2px 2px 5px rgb(70, 70, 70); 
 }
+/* @media screen and (max-width: 600px)
+{
+    .mainClass
+    {
+        display: block;
+        flex-direction: column;
+    }
+} */
 .mainClass
 {
     padding-top: 120px;
@@ -61,7 +70,7 @@ main
   /* Tooltip text */
   .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width: 200px;
     background-color: #555;
     color: #fff;
     text-align: center;
@@ -188,6 +197,8 @@ h5 {
     }
 }
 @media screen and (max-width: 767px) {
+    
+
 
     .cards-col-lg-4 {
         margin: 0 5%;
@@ -206,6 +217,11 @@ h5 {
     }
 }
 @media screen and (max-width: 576px) {
+
+    .mainClass
+    {
+        flex-direction: column;
+    }
 
     .cards-col-lg-4 {
         margin: 0 5%;
