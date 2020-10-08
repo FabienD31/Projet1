@@ -92,8 +92,7 @@ main
 {
     background-color: #e7d8c9 ;
 }
-footer 
-{
+footer,.card,.card-body,.card-header {
     background-color: #e7d8c9;
 }
 .btn-styles {
@@ -106,10 +105,27 @@ footer
     border-radius: 5px;
     box-shadow: 2px 2px 2px #000000;
 }
-.btn 
+button
 {
     background-color: #66d194;
 }
+
+/* animation for WCS news title */
+.ml3 {
+    font-weight: 900;
+    font-size: 4.5em;
+    text-align: justify;
+  }
+/* end of animation for WCS news title */
+
+h5 {
+    color: #E8544A;
+    font-weight: bold;
+}
+/* CSS RULES FOR NEWS.HTML */
+
+#more {display: none;}
+#maskCor
 /*START CSS RULES FOR CARDS.HTML */
 .cards-card-title {
     color: initial;
