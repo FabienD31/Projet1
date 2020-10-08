@@ -1,4 +1,4 @@
-# Projet1
+# Wild Code School for Sale
 
 Projet 1 - Site statique de vente aux enchères de Wilders
 
