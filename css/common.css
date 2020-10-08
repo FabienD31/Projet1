@@ -9,6 +9,12 @@ main
     color: #eceff2;
     font-family: 'Montserrat', sans-serif;
 }
+.accueilTitle
+{
+    
+    font-size: 3em;
+}
+
 .nav-item:hover
 {   
     border-radius: 4px;
@@ -28,7 +34,8 @@ main
     justify-content: space-around;
     flex-direction: row-reverse;
 }
-.image-clignote  {
+.image-clignote  
+{
     animation-duration: 2s;
     animation-name: clignoter;
     animation-timing-function: ease-in;
@@ -145,7 +152,6 @@ h5 {
 }
 .cards-main {
     height: var(--size-cards-main);
-    margin-top: 111px;
 }
 .cards-list-group-item {
     color: initial;
