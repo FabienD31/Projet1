@@ -99,7 +99,8 @@ main
 {
     background-color: #e7d8c9 ;
 }
-footer,.card,.card-body,.card-header {
+footer, .news-card, .news-card-body 
+{
     background-color: #e7d8c9;
 }
 .btn-styles {
