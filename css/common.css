@@ -3,11 +3,13 @@
     --size-cards-main : 120vh;
 }
 /*COMMON RULES*/
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
 main 
 {
     background-color: #E8544A;
     color: #eceff2;
-    font-family: 'Montserrat', sans-serif;
 }
 .accueilTitle
 {
@@ -153,6 +155,7 @@ h5 {
 }
 .cards-main {
     height: var(--size-cards-main);
+    margin-top: 111px;
 }
 .cards-list-group-item {
     color: initial;
