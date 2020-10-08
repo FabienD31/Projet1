@@ -145,7 +145,7 @@ h5 {
 }
 .cards-main {
     height: var(--size-cards-main);
-    padding-top: 111px;
+    margin-top: 111px;
 }
 .cards-list-group-item {
     color: initial;
