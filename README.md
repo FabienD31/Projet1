@@ -10,13 +10,13 @@ Projet 1 - Site statique de vente aux enchères de Wilders
   "EN CONSTRUCTION"
 
 
-##Links
+## Links
 
 [WireFrame](http://wireframepro.mockflow.com/view/M8544a8a3684caba63d8df04a09ba7f8a1601374661160#/page/27ec8547002e4c2fa2f0eeca6d435116)
 
 [Site](https://fabiend31.github.io/Projet1/)
 
-##Notre Equipe
+## Notre Equipe
 
 - Coralie ESPASA [(GitHub)](https://github.com/CoralieEspasa)
 - Hervé MESTE [(GitHub)](https://github.com/gloups31)
