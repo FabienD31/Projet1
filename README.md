@@ -24,6 +24,12 @@ Il serait intéressant dans un second temps de pouvoir rendre dynamique ce site 
 
 Proposition Fabien :
 Ajout sur la page wilderDuMois: Le principe de contacter directement uniquement ce Wilder car il à eu le plus d'enchère cette semaine
+Fonctionnalité/Petit plus : Les hover sur les boutons, le lien du site du campus Toulouse présent sur la plupart des pages via un logo "internet" sur la droite de la page, qui suis le scroll de la page. 
+Une map avec le positionnement du campus de Toulouse est présent sur la page contact. 
+Effet de mouvement: 
+- Logo page d'accueil
+- Titre page New
+- Couronne sur la page WilderDuMois. 
 
 ## Links
 
