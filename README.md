@@ -22,6 +22,9 @@ En conclusion, nous souhaitons que nos wilders puissent avoir le meilleur match 
 Il serait intéressant dans un second temps de pouvoir rendre dynamique ce site internet et de réfléchir à la mise en place d'un système de transaction en ligne.
 */
 
+Proposition Fabien :
+Ajout sur la page wilderDuMois: Le principe de contacter directement uniquement ce Wilder car il à eu le plus d'enchère cette semaine
+
 ## Links
 
 [WireFrame](http://wireframepro.mockflow.com/view/M8544a8a3684caba63d8df04a09ba7f8a1601374661160#/page/27ec8547002e4c2fa2f0eeca6d435116)
