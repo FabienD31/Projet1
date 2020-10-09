@@ -16,6 +16,10 @@ main
     font-size: 3em;
     
 }
+.pAccueil
+{
+    font-size: 1.3em;
+}
 .nav-item:hover
 {   
     border-radius: 4px;
