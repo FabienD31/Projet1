@@ -6,7 +6,7 @@ Projet 1 - Site statique de vente aux enchères de Wilders
 
 ## A propos :
 
-Nous serons 30 nouveaux Wilders à arriver sur le marché Toulousain du Web Developpement. Dans le but d'assurer un placement de 100% de nos Wilders, nous avons décidé de les aider à se positionner auprès des sociétés du secteur. Comme leurs compétences et profils sont souvent très recherchés, nous laissons l'opportunité à nos partenaires de générer des enchères sur leurs Wilders favoris et de les acquérir au meilleur rapport qualité/prix.
+Nous serons 30 nouveaux Wilders à arriver sur le marché Toulousain du Web Developpement. Dans le but d'assurer à chacun de nous un placement sur le marché du travail, nous avons décidé de créer une plateforme afin de les aider à se positionner auprès des sociétés du secteur. Comme leurs compétences et profils sont souvent très recherchés, nous laissons l'opportunité à nos partenaires de générer des enchères sur leurs Wilders favoris et de les acquérir au meilleur rapport qualité/prix.
 
 Depuis l'accueil du site, le client peut accéder à différentes pages du site :
 
