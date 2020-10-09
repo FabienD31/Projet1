@@ -13,8 +13,7 @@ main
 }
 .accueilTitle
 {
-    font-size: 3em;
-    
+    font-size: 3em;    
 }
 .pAccueil
 {
@@ -228,6 +227,7 @@ h5
     .mainClass
     {
         flex-direction: column;
+        height: auto;
     }
     .accueilTitle
     {
